@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main class="main-register">
+                <section class="registro">
+                    <div class="title">
+                        <label class="labelTitle" id="labelTitle">REGISTRO</label>
+                    </div>
+                    <form class="formulario" action="/createUser" method="POST">
+                        <div class="name">
+                            <label class="labelName" id="labelName">Nombre</label>
+                            <input type="text" class="inputName" placeholder="nombre" required>
+                        </div>
+                        <div class="lastName">
+                            <label class="labelLastName" id="labelLastName">Apellido</label>
+                            <input type="text" class="inputLastName" placeholder="apellido" required>
+                        </div>
+                        <div class="age">
+                            <label class="labelAge" id="labelAge">Fecha de Nacimiento</label>
+
+                            <input type="date" class="inputAge" placeholder="Fecha de Nacimiento" required>
+
+                        </div>
+                        <div class="address">
+                            <label class="labelAddress" id="labelAddress">Direccion</label>
+                            <input type="text" class="inputAddress" placeholder="direccion" required>
+                        </div>
+                        <div class="email">
+                            <label class="labelEmail" id="labelEmail">Email</label>
+                            <input type="email" class="inputEmail" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="password">
+                            <label class="labelPassword" id="labelPassword">Password</label>
+                            <input type="password" class="inputPassword" placeholder="**********" required>
+                        </div>
+                        <div class="rePassword">
+                            <label class="labelRePassword" id="labelRePassword">repita el Password</label>
+                            <input type="password" class="inputRePassword" placeholder="**********" required>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="enviar">
+                                <button type="submit" class="btn">Enviar</button>
+                            </div>
+                            <div class="tengoCuenta">
+                                <button type="#" class="btn-tengoCuenta">Ya tengo cuenta</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <%- include('partials/footer') %>
+    </body>
+
+</html>

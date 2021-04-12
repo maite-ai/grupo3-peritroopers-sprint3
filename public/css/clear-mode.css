@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif, arial, helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f1f1;
+}
+
+header {
+    background-color: #180A41;
+    color: white;
+}
+
+.search-logo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*================Íconos favoritos / carrito ====================*/
+
+.cart-heart {
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.cart-box {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.fav-box {
+    position: absolute;
+    left: 45px;
+    top: 5px;
+}
+
+.cart,
+.heart {
+    flex: 1 1 auto;
+    font-size: 16px;
+    margin: 8px;
+    transition: color 0.2s ease;
+}
+
+.cart:hover {
+    color: rgb(110, 110, 237);
+}
+
+
+/*=================== Contenedor Logo completo y reducido ======================*/
+
+.logo-container {
+    margin: 20px 0px 20px 75px;
+    text-align: center;
+}
+
+.logo-box-normal {
+    display: none;
+}
+
+.logo-box-reduced {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*======================= Búsqueda y botón =========================*/
+
+.search-container {
+    display: flex;
+    position: relative;
+}
+
+.search-box {
+    width: 100%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 75%;
+    height: 18px;
+    border-radius: 3px;
+    border: none;
+}
+
+.casillero {
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.button-box {
+    position: absolute;
+    left: 146px;
+    bottom: 46px;
+    font-size: 12px;
+}
+
+.search-button {
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+
+/*=================== Burguer y enlaces =======================*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-links {
+    margin-top: 0;
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.burger-container {
+    position: relative;
+}
+
+.burger-menu {
+    font-size: 20px;
+    padding: 9px 10px;
+    position: absolute;
+    right: 15px;
+    top: 35px
+}
+
+.contenedor-links a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.nav-bar {
+    display: none;
+    justify-content: space-between;
+    align-self: center;
+}
+
+main {
+    background-color: #f8f1f1;
+}
+
+
+/*=========================== CARRUSEL de IMAGENES =====================================*/
+
+.pic-ctn {
+    position: relative;
+    width: 90%;
+    height: 90px;
+    margin: 0.5vh auto auto auto;
+    background-size:cover
+}
+
+.pic-ctn img {
+    width: 90%;
+    height: 100%;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(35% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+
+/*============================= FIN CARRUSEL ===================================*/
+
+h2 {
+    margin-top: 20px;
+    border-bottom: solid 2px #180A41;
+    color: #180A41;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Chakra Petch', arial;
+}
+
+h2:hover {
+    background-color: rgb(175, 157, 192);
+}
+
+.price {
+    color: rgb(110, 110, 237);
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+
+/*===================== Tarjetas de productos ========================*/
+
+.pic1 a {
+    text-decoration: none;
+    text-align: center;
+    color: #180A41;
+}
+
+.pic1,
+.popular-item {
+    margin: 25px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.pic1:hover {
+    box-shadow: 0px 0px 10px rgb(175, 157, 192);
+}
+
+.popular-item:hover {
+    box-shadow: 0px 0px 10px rgb(175, 157, 192);
+}
+
+.popular-item a {
+    text-decoration: none;
+}
+
+.popular-item a {
+    color: #180A41;
+    text-align: center;
+}
+
+.our-brands {
+    padding: 10px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-item {
+    flex: 1 1 20%;
+    margin: 1%;
+}
+
+.brand-item img {
+    width: 100%;
+}
+
+
+/*-----------EMPIEZAN LOS CAMBIOS DE YISUS --> modificado por PEI, sorry YISUS :/----------------------*/
+
+.detail,
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic1,
+.popular-item {
+    width: 250px;
+    height: 350px;
+}
+
+.pic1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.popular-item img {
+    width: 250px;
+    height: 250px;
+}
+
+
+/*-----------------------TERMINAN LOS CAMBIOS DE YISUS-----------------------*/
+
+footer {
+    background-color: #180A41;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+/*===================== FOOTER ========================*/
+
+.contactus-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contactus-title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.contact-form label {
+    display: none;
+}
+
+.contact-form input {
+    padding: 2px 10px;
+}
+
+.nombre,
+.email {
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    padding: 10px;
+}
+
+.comentario {
+    margin-top: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+.data,
+.socialIcons,
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 10px;
+}
+
+.data-item {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.data-item-faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    font-size: 14px;
+    color: #00aced;
+}
+
+.botones {
+    display: flex;
+    flex-flow: column;
+}
+
+.send {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 237);
+    color: rgb(214, 210, 210);
+    font-weight: bold;
+}
+
+.clean {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #180A41;
+    color: #fff;
+    font-weight: bold;
+}
+
+.send:hover {
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+}
+
+.clean:hover {
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+}
+
+.socialIcons {
+    display: flex;
+    flex-flow: row;
+}
+
+.socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    margin: 5px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 2.28571429em;
+    max-width: 2.28571429em;
+    height: 2.28571429em;
+    white-space: nowrap;
+    line-height: 1.5em;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+
+.socialIcons li i {
+    margin-right: 0.5em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+    text-decoration: none;
+}
+
+.socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .whatsapp {
+    background-color: #4dc247;
+    box-shadow: 0 0 16px #4dc247;
+}
+
+
+/* ================================= CARRITO DE COMPRAS ======================================== */
+
+.cart-buttons {
+    padding-bottom: 35px;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.table-cart {
+    margin-top: 25px;
+    text-align: center;
+}
+
+thead {
+    color: #180A41;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.celda-i {
+    color: #180A41;
+    width: 15%;
+}
+
+.foto-carro {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.detalle-producto {
+    font-size: 2.7vw;
+}
+
+.precio-unitario {
+    font-size: 2.6vw;
+}
+
+.precio-final {
+    font-size: 2.9vw;
+}
+
+.celdas {
+    width: 95%;
+    border: 1px rgb(205, 205, 235) solid;
+    border-collapse: collapse;
+}
+
+tfoot {
+    border-top: 0.5px rgb(110, 110, 237) solid;
+}
+
+.total {
+    font-size: 3.2vw;
+    color: #180A41;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buy-button {
+    background-color: #180a41;
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.buy-button:hover {
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
+}
+
+.add-button {
+    background-color: rgb(110, 110, 237);
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.add-button:hover {
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
+}
+
+
+/* ---------------------------- TABLETS ---------------------------- */
+
+@media (min-width: 481px) {
+    /*===================== HOME / header ===================*/
+    .cart-box {
+        left: -15px;
+        top: -2px;
+    }
+    .fav-box {
+        left: 25px;
+        top: -2px;
+    }
+    .heart,
+    .cart {
+        font-size: 22px;
+    }
+    .logo-container {
+        margin: 20px 80px 20px 50px;
+    }
+    /*=============== Búsqueda, botón y menú hamburguesa ===============*/
+    .search-box {
+        width: 160px;
+        margin-left: 8px;
+        position: absolute;
+        right: -80px;
+    }
+    .search-box input {
+        width: 100%;
+    }
+    .button-box {
+        position: absolute;
+        left: 58px;
+        bottom: 46px;
+        font-size: 12px;
+    }
+    .burger-menu {
+        right: -20px;
+    }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .pic-ctn {
+        right: 6%;
+        height: 120px;
+    }
+    .detail,
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pic1,
+    .popular-item {
+        width: 150px;
+        height: 250px;
+    }
+    .pic1 img {
+        width: 150px;
+        height: 150px;
+    }
+    .popular-item img {
+        width: 150px;
+        height: 150px;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    flex: 5 1 100%;
+    text-align: center;
+}
+
+
+/*============ CARRITO de COMPRAS ======== */
+
+thead {
+    font-size: 12px;
+}
+
+.celdas {
+    width: 150px;
+}
+
+.foto-carro {
+    box-sizing: content-box;
+    width: 180px;
+}
+
+.detalle-producto {
+    font-size: 14px;
+}
+
+.precio-unitario {
+    font-size: 16px;
+}
+
+.precio-final {
+    font-size: 18px;
+}
+
+.total {
+    font-size: 20px;
+}
+
+
+/* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
+
+@media (min-width: 769px) {
+    .search-logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    /*===================== HOME / header ===================*/
+    .cart-box {
+        left: -35px;
+        top: 120px;
+    }
+    .fav-box {
+        left: 30px;
+        top: 120px;
+    }
+    /*=============== Búsqueda, botón y menú hamburguesa ===============*/
+    .search-box {
+        right: -35px;
+        top: 100px;
+    }
+    .button-box {
+        left: 15px;
+        bottom: 117.5px;
+    }
+    .logo-box-normal {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-box-reduced {
+        display: none;
+    }
+    .burger-container {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+        flex: 1 0 100%;
+        justify-content: space-around;
+    }
+    .barra-nav1 {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .secciones a {
+        margin: 10px;
+        color: #fff;
+    }
+    .secciones:hover {
+        text-shadow: 1px 1px 2px #ebebeb;
+        text-decoration: underline;
+        color: rgb(110, 110, 237);
+    }
+    .pic-ctn {
+        right: 14%;
+        height: 250px;
+    }
+    .socialIcons {
+        display: flex;
+        flex-flow: column;
+    }
+    .box-buy-button {
+        margin-top: 20px;
+    }
+    .box-add-button {
+        margin-top: 20px;
+    }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .detail,
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .our-brands {
+        max-width: 70%;
+        margin: auto;
+    }
+    .pic1,
+    .popular-item {
+        width: 300px;
+        height: 400px;
+    }
+    .pic1 img {
+        width: 300px;
+        height: 300px;
+    }
+    .popular-item img {
+        width: 300px;
+        height: 300px;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .data-item {
+        margin-bottom: 10px;
+    }
+    .contact-form label {
+        display: block;
+    }
+}
+
+
+/* ---------------------------- DESKTOP ---------------------------- */
+
+@media (min-width: 1200px) {
+    footer {
+        display: flex;
+        align-items: center;
+    }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .pic-ctn {
+        right: 19%;
+        height: 350px;
+    }
+    .detail,
+    .gallery-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .pic1 a {
+        color: #fff;
+    }
+    .pic1 a:hover {
+        color: #180A41;
+    }
+    .pic1 .detail-prod:hover {
+        opacity: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #180A41;
+    }
+    .pic1 {
+        width: 250px;
+        height: 350px;
+    }
+    .pic1 img {
+        width: 250px;
+        height: 250px;
+    }
+    .popular-item {
+        width: 250px;
+        height: 350px;
+    }
+    .popular-item img {
+        width: 250px;
+        height: 250px;
+    }
+    .popular-item a {
+        color: #fff;
+    }
+    .popular-item a:hover {
+        color: #180A41;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+}

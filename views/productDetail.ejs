@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main>
+                <h2>Nombre del Producto</h2>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/tecladoRedDragonPopulares.jpg" alt="Teclado Red Dragon">
+                    </div>
+                    <div class="product-info">
+                        <div class="price-rate">
+                            <p class="price"><i class="fas fa-dollar-sign"></i>90.000</p>
+                            <div class="rate">
+                                <i class="far fa-frown"></i><i class="far fa-frown-open"></i><i class="far fa-meh"></i><i class="far fa-smile"></i><i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="pay-button-map">
+                            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13137.528426543311!2d-58.40592325!3d-34.59449805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1617576238700!5m2!1ses-419!2sar" width="300"
+                                    height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe></div>
+                            <div class="pay-button">
+                                <div class="p-pay">
+                                    <p>Medios de Pago</p>
+                                    <label for=""></label>
+                                    <select name="payOptions" id="">
+                                <option value="credito">Tarjeta de Crédito</option>
+                                <option value="debito">Tarjeta de Débito</option>
+                                <option value="payPal">Pay Pal</option>
+                                <option value="mercadoPago">Mercado Pago</option>
+                                <option value="cash">Efectivo</option>
+                            </select>
+                                </div>
+                                <div class="input-button">
+                                    <p>Unidades</p>
+                                    <div class="input">
+                                        <i class="fas fa-minus"></i><input type="text" placeholder="0"><i class="fas fa-plus"></i>
+                                    </div>
+                                    <button><a href="./productCart">Añadir al Carro</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <h2>Detalles sobre el Producto</h2>
+                    <p>- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                    <p>- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                    <p>- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                    <p>- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                </div>
+                <div class="product-chat">
+                    <h2>Comentarios de Nuestros Usuarios Sobre el Producto</h2>
+                    <p>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                    <p>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit fugit molestias quo commodi ipsam nulla, inventore odio facere nostrum. Tenetur illum doloribus, ducimus placeat vel nisi laboriosam dignissimos ea?</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Si ya Compraste el producto dejanos tu opinión."></textarea>
+                </div>
+            </main>
+            <%- include('partials/footer') %>
+    </body>
+
+</html>
