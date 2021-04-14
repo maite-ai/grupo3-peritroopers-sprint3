@@ -12,7 +12,7 @@ Los productos ofrecidos son aquellos conocidos como periféricos (de entrada y d
 
 ## ¿A quiénes va dirigido?
 
-El sitio ofrece productos para el público en general, ya que los accesorios y perisfericos son utilizados en el ambito del hogar como en oficinas. 
+El sitio ofrece productos para el público en general, ya que los accesorios y periféricos son utilizados tanto en el ámbito del hogar, como en oficinas. 
 
 ## Referencias
 Todo en la vida requiere de inspiración, ninguna idea surge de la nada. 
@@ -47,7 +47,7 @@ let referentes = [{
 ```
 
 ## ¿Quiénes somos? 
-Somos **DH-troopers** y nuestro genial equipo está conformado por cuatro integrantes:
+Somos **DH-troopers** y nuestro genial equipo está conformado por tres integrantes:
 
 ```JavaScript
 let grupo = [{
@@ -63,12 +63,6 @@ let grupo = [{
     apodo: "Yisus"
 },
 {
-    nombreCompleto: "Matías Davila",
-    ocupacion: "Servicio técnico y venta de insumos informáticos",
-    cumpleanios: "12 de junio",
-    apodo: "Mati"
-},
-{
     nombreCompleto: "Fernanda Ríos",
     ocupacion: "Militar, estudiante y mamá",
     cumpleanios: "27 de mayo",
@@ -76,6 +70,6 @@ let grupo = [{
 }];
 ```
 
-¿Querés ver como trabajamos? Visite [nuestro tablero](https://trello.com/b/RuL65fGS/sprint-2) en Trello.
+¿Querés ver como trabajamos este Sprint? Visitá [nuestro tablero de Sprint 3](https://trello.com/b/i5xL1Vfw/sprint-3) en Trello.
 
 ![Logo de DH-Troopers](logo-grupo.gif)
