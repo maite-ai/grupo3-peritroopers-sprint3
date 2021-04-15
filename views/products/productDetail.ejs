@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head') %>
+<%- include('./../partials/head') %>
 
     <body>
-        <%- include('partials/header') %>
-            <main>
+        <%- include('./../partials/header') %>
+            <main class="main-productDet">
                 <h2>Nombre del Producto</h2>
                 <div class="product">
                     <div class="product-image">
@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="input-button">
                                     <p>Unidades</p>
-                                    <div class="input">
+                                    <div class="input-productDet">
                                         <i class="fas fa-minus"></i><input type="text" placeholder="0"><i class="fas fa-plus"></i>
                                     </div>
                                     <button><a href="./productCart">Añadir al Carro</a></button>
@@ -57,7 +57,7 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Si ya Compraste el producto dejanos tu opinión."></textarea>
                 </div>
             </main>
-            <%- include('partials/footer') %>
+            <%- include('./../partials/footer') %>
     </body>
 
 </html>
