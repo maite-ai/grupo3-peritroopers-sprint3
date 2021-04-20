@@ -2,29 +2,28 @@
 
 # PeriTroopers.com.ar
 
-Realizamos una retrospectiva de cómo funcionamos como equipo durante el Sprint 1, centrandonos en crecer y mejorar en cara a los próximos desafios, y lo realizamos mediante la dinámica de la **estrella de mar**. Las conclusiones a las que llegamos fueron las siguientes:
-
-## - Principales conclusiones del Retro del Sprint 2 -
-
-{Clarita resume}
+Realizamos una retrospectiva de cómo funcionamos como equipo durante el Sprint 2, centrandonos en crecer y mejorar en cara a los próximos desafios, y lo realizamos mediante la dinámica de la **estrella de mar**. Las conclusiones a las que llegamos fueron las siguientes:
 
 ##  - Comenzar a hacer -
 
-Si bien en el Sprint 1 tuvimos reuniones suficientes para alcanzar los objetivos planteados y completar la entrega, creemos que nos sería de gran utilidad y ayuda comenzar a realizar más video llamadas en equipo para afrontarnos a las dificultades de los próximos entregables.
+Luego de algunas diferencias en el Sprint anterior que mencionaremos más adelante, entendimos que es fundamental mantener una comunicación fluida e intentar llegar a acuerdos sobre las diferencias cuando las mismas surgen, y no cuando la situación se vuelve insostenible.
 
 ## - Más de -
 
-Reuniones, discusiones e intercambio de ideas, puestas en común, brainstorming, toma de decisiones en conjunto.
+Al igual que en el sprint anterior, queremos seguir sumando reuniones, discusiones e intercambio de ideas, puestas en común, brainstorming, toma de decisiones en conjunto.
 
 ## - Continuar haciendo -
 
-En línea con el ítem anterior, creemos que esos fueron los puntos en los que nos destacamos para alcanzar las metas del Sprint 1. Por lo tanto, intentaremos seguir desarrollando estas cualidades como equipo, y poder potenciarnos entre todos.  
+Es de vital importancia mantener las reuniones semanales entre todos, donde debatimos ideas, realizamos propuestas, conversamos sobre las diferencias y seguimos avanzando como equipo. Trabajamos muy bien individualmente cada uno en la parte del proyecto que le toca, pero también nos realizamos consultas, hacemos pair-programming y puestas en común sobre en lo que estamos avanzando.
   
-### - Otros puntos a considerar -
+## - Dejar de hacer -
 
-En cuanto a **“dejar de hacer”**  o **“menos de”**, creemos que si bien recién comenzamos tanto con la
-entrega como a trabajar en equipo, no encontramos aún ningún punto a corregir o alguna falla que temamos repetir o sobre la que tengamos que trabajar para modificar.
-  
+Durante el proceso del Sprint 2 nos encontramos con grandes debilidades como equipo, que creemos sucedieron por falta de comunicación y objetivos grupales y personales poco claros. No pudimos ponernos de acuerdo en varios puntos del proyecto, y al momento de querer salvar esas diferencias ya era tarde, próximos a la fecha de entrega. Esto culminó en una baja en el equipo, por lo que aprendimos de esta situación la importancia de tener una comunicación mucho más fluida desde el comienzo del módulo.
+
+
+## - Menos de -
+
+Falta de comunicación, formas inadecuadas de tratar a nuestros compañeros de equipo, discusiones sin sentido.
   
   ***   
 
