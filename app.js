@@ -19,6 +19,10 @@ app.get("/login", (req, res) => { res.render("./users/login") });
 
 app.get("/productDetail", (req, res) => { res.render("./products/productDetail") });
 
+app.get("/create", (req, res)=>{ res.render("./products/createProduct") });
+
+app.get("/edit", (req, res)=>{ res.render("./products/editProduct") });
+
 app.get("/faq", (req, res) => { res.render("faq") });
 
 app.listen(port || 3030, () => {
