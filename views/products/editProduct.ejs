@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./../partials/head') %>
+<body>
+    <%- include('./../partials/header') %>
+    <main>
+        <form action="" method="POST">
+            <label for="">Nombre del Producto:</label>
+            <input type="text" name="name" id="name">
+            <label for="">Descripción:</label>
+            <textarea name="decription" id="decription" cols="30" rows="10"></textarea>
+            <label for="">Imágen:</label>
+            <input type="file" name="image" id="image">
+            <label for="">Categoría:</label>
+            <select name="category" id="category">
+                <option value="">Auriculares</option>
+                <option value="">Teclados</option>
+                <option value="">Mouse</option>
+                <option value="">Micrófono</option>
+            </select>
+            <label for="">Colores:</label>
+            <select name="color" id="color">
+                <option value="">Rojo</option>
+                <option value="">Verde</option>
+                <option value="">Celeste</option>
+                <option value="">Negro</option>
+            </select>
+            <label for="">Precio:</label>
+            <input type="number" name="price" id="price">
+        </form>
+    </main>
+    <%- include('./../partials/footer') %>
+</body>
+</html>
