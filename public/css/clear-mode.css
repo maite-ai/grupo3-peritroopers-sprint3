@@ -87,8 +87,11 @@ header {
 .search-container {
     display: flex;
     position: absolute;
-    left: 54%;
+    left: 87%;
+    transform: translateX(-87%);
     top: 2%;
+    margin-right: 4%;
+    margin-top: 15px;
 }
     .search-box {
         width: 150px;
@@ -100,7 +103,6 @@ header {
             border: none;
         }
         .casillero {
-            margin-top: 15px;
             padding-left: 7px;  
         }
 
@@ -110,6 +112,7 @@ header {
 .burger-container {
     position: relative;
     left: 5%;
+    margin-right: 4%;
 }
     .burger-menu {
         margin: 10px;
@@ -641,35 +644,43 @@ form i {
 /* ================================= REGISTER ======================================== */
 
    .register-form{
-       padding: 20px 30px 0px;
-       margin: 10px;
-       margin-bottom: 30px;
+       padding: 30px 10% 30px 10%;
+       margin: auto;
    }
 
    .contenedor-regform{
-       margin-bottom: 15px;
-       color: #180A41;
-       display: flex;
-       flex-direction: column;
+        padding: 0px 2% 10px 2%;
+        margin-bottom: 2px;
+        color: #180A41;
+        display: flex;
+        flex-direction: column;
    }
 
    .contenedor-regform input{
-       padding: 8px;
+       padding: 5px 40px;
        border-radius: 7px;
        border: 1px solid rgb(218, 215, 215);
        width: 90%;
    }
 
+   .contenedor-regform input:focus {
+        border: solid 1px rgb(110, 110, 237);
+        box-shadow: 0px 0px 10px #cac7c7;
+        border-radius: 7px;
+   }
+
    .contenedor-regform label{
-       font-size: 23px;
-       margin-left: 20px;
+       font-size: 15px;
+       text-align: left;
+       margin-bottom: 0%;
+       padding: 0px 40px;
    }
 
    .send-button{
         background-color: #180a41;
         color: #fff;
-        font-size: 20px;
-        padding: 16px 32px;
+        font-size: 14px;
+        padding: 6px 18px;
         border-radius: 4px;
         width: 90%;
         border: none;
@@ -683,21 +694,17 @@ form i {
         text-decoration: none;
     }
 
-    .got-account-box a:hover{
-        color: #fff;
-    }
-
     .got-account-box{
         text-decoration: none;
-        background-color: rgb(110, 110, 237);
         margin-top: 10px;
         color: #fff;
         border: none;
-        padding: 6px 10px;
+        padding: 6px;
         border-radius: 4px;
         width: 90%;
         margin-top: 2%;
         text-align: center;
+        font-size: 14px;
     }
 
     .got-account-box:hover{
