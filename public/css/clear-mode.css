@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Chakra Petch', sans-serif, arial, helvetica;
+    font-family: 'Chakra Petch', monospace, helvetica;
     box-sizing: border-box;
 }
 
@@ -10,115 +10,118 @@ body {
     background-color: #f8f1f1;
 }
 
+/* HEADER ======================================================== */
+
 header {
     background-color: #180A41;
     color: white;
 }
+    .search-logo-container {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+        header a i {
+            color: white;
+        }
 
-.search-logo-container {
-    display: flex;
-    justify-content: space-around;
-}
 
-
-/*================Íconos favoritos / carrito ====================*/
+/* Iconos: Carrito y Fav. -------------------------------------*/
 
 .cart-heart {
     display: flex;
     align-self: center;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    position: relative;
-}
-
-.cart-box {
+    justify-content: space-evenly;
     position: absolute;
-    left: 10px;
-    top: 5px;
+    top: 45%;
+    left: 55%;
 }
+    .cart-box {
+        margin: 10px;
+    }
+        .cart:hover {
+            color: rgb(110, 110, 237);
+        }
+        .cant {
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+        }
 
-.fav-box {
-    position: absolute;
-    left: 45px;
-    top: 5px;
-}
+    .fav-box {
+        margin: 10px;
+    }
+        .heart:hover {
+            color: rgb(110, 110, 237);
+        }
 
-.cart,
-.heart {
-    flex: 1 1 auto;
-    font-size: 16px;
-    margin: 8px;
-    transition: color 0.2s ease;
-}
-
-.cart:hover {
-    color: rgb(110, 110, 237);
-}
+        .cart,
+        .heart {
+            flex: 1 1 auto;
+            font-size: 16px;
+            margin: 5px;
+            transition: color 0.2s ease;
+        }
 
 
-/*=================== Contenedor Logo completo y reducido ======================*/
+/* Contenedor Logo completo y reducido ---------------------------*/
 
 .logo-container {
-    margin: 20px 0px 20px 75px;
+    margin: 20px 50% 20px 5%;
     text-align: center;
 }
 
-.logo-box-normal {
-    display: none;
-}
+    .logo-box-normal {
+        display: none;
+    }
 
-.logo-box-reduced {
-    display: flex;
-    justify-content: center;
-}
+    .logo-box-reduced {
+        display: flex;
+        justify-content: center;
+    }
 
 
-/*======================= Búsqueda y botón =========================*/
+/* Casillero y botón de Búsqueda ------------------------------- */
 
 .search-container {
     display: flex;
-    position: relative;
-}
-
-.search-box {
-    width: 100%;
-    text-align: right;
-    margin-right: 10px;
-}
-
-.search-box input {
-    width: 75%;
-    height: 18px;
-    border-radius: 3px;
-    border: none;
-}
-
-.casillero {
-    margin-top: 15px;
-    width: 100%;
-    padding-left: 7px;
-}
-
-.button-box {
     position: absolute;
-    left: 146px;
-    bottom: 46px;
-    font-size: 12px;
+    left: 54%;
+    top: 2%;
 }
+    .search-box {
+        width: 150px;
+    }
+        .search-box input {
+            width: 100%;
+            height: 18px;
+            border-radius: 3px;
+            border: none;
+        }
+        .casillero {
+            margin-top: 15px;
+            padding-left: 7px;  
+        }
 
-.search-button {
-    border: none;
-    background-color: #fff;
-    border-radius: 3px;
+
+/* Burguer y enlaces ------------------------------------ */
+
+.burger-container {
+    position: relative;
+    left: 5%;
 }
-
-
-/*=================== Burguer y enlaces =======================*/
-
-a {
-    text-decoration: none;
-    color: white;
-}
+    .burger-menu {
+        margin: 10px;
+        font-size: 20px;
+        padding: 9px 10px;
+        position: absolute;
+        right: 5px;
+        top: 25px
+    }
+        .burger-menu:active {
+            border: 1px solid white;
+        }
 
 .contenedor-links {
     margin-top: 0;
@@ -126,41 +129,221 @@ a {
     max-width: 1000px;
     margin: auto;
 }
-
-.burger-container {
-    position: relative;
-}
-
-.burger-menu {
-    font-size: 20px;
-    padding: 9px 10px;
-    position: absolute;
-    right: 15px;
-    top: 35px
-}
-
-.contenedor-links a {
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    overflow: hidden;
-}
-
-.nav-bar {
-    display: none;
-    justify-content: space-between;
-    align-self: center;
-}
-
+    .contenedor-links a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        overflow: hidden;
+    }
+        .nav-bar {
+            display: none;
+            justify-content: space-between;
+            align-self: center;
+        }
+/* MAIN ================================================= */
 main {
     background-color: #f8f1f1;
 }
+    h2 {
+        margin-top: 20px;
+        border-bottom: solid 2px #180A41;
+        color: #180A41;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Chakra Petch', arial;
+    }
+    h2:hover {
+        background-color: rgb(175, 157, 192);
+    }
 
+/* FOOTER =================================================*/
+footer {
+    background-color: #180A41;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
 
-/*=========================== CARRUSEL de IMAGENES =====================================*/
+/* Formulario "Contactanos" ---------------------------------*/
+.contactus-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contactus-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+    .contact-form label {
+        display: none;
+    }
+    .contact-form input {
+        padding: 2px 10px;
+    }
+        .nombre,
+        .email {
+            width: 200px;
+            height: 25px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+    .contact-form textarea {
+        padding: 10px;
+    }
+        .comentario {
+            margin-top: 15px;
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+        }
+.botones {
+    display: flex;
+    flex-flow: column;
+}
+    .send {
+        margin-top: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 237);
+        color: #fff;
+    }
+        .send:hover {
+            box-shadow: 0px 0px 15px rgb(206, 206, 206);
+        } 
+    .clean {
+        margin-top: 10px;
+        padding: 5px;
+        border: 0.5px solid rgb(110, 110, 237);
+        border-radius: 5px;
+        background-color: #180A41;
+        color: #fff;
+    }
+        .clean:hover {
+            box-shadow: 0px 0px 15px rgb(206, 206, 206);
+        }
+
+/* Datos de la empresa ------------------------------- */
+.data {
+    margin-top: 15px;
+    text-align: center;
+}
+    .data-item {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .data-item-faq {
+        margin-top: 20px;
+    }
+        .faq-item {
+            font-size: 14px;
+            color: #00aced;
+        }
+
+/* Redes sociales -------------------------------------- */
+
+.socialIcons {
+    display: flex;
+    flex-flow: row;
+    margin-top: 15px;
+    text-align: center;
+}
+    .socialIcons li {
+        background-color: yellow;
+        list-style: none;
+        margin: 5px;
+        border-radius: 2em;
+        overflow: hidden;
+    }
+        .socialIcons li a {
+            display: block;
+            padding: 0.5em;
+            min-width: 2.28571429em;
+            max-width: 2.28571429em;
+            height: 2.28571429em;
+            white-space: nowrap;
+            line-height: 1.5em;
+            transition: 0.5s;
+            text-decoration: none;
+            font-family: arial;
+            color: #fff;
+        }
+        .socialIcons li:hover a {
+            max-width: 200px;
+            padding-right: 1em;
+            text-decoration: none;
+        }
+            .socialIcons li i {
+                margin-right: 0.5em;
+                text-align: center;
+                font-size: 20px;
+            }
+
+.socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
+
+/* Área de copyright ----------------------------------- */
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Botón flotante de whatsapp ----------------------- */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:7%;
+	right:7%;
+	background-color:#25d366;
+	color:#fff;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    font-weight: bold;
+	box-shadow: 5px 5px 20px #666;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #fff;
+  background-color:#1c5932;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/*=========================== HOME =====================================*/
+/* --------------- CARRUSEL de IMÁGENES --------------- */
 .pic-ctn {
     position: relative;
     width: 90%;
@@ -168,11 +351,10 @@ main {
     margin: 0.5vh auto auto auto;
     background-size:cover
 }
-
-.pic-ctn img {
-    width: 90%;
-    height: 100%;
-}
+    .pic-ctn img {
+        width: 90%;
+        height: 100%;
+    }
 
 @keyframes display {
     0% {
@@ -197,304 +379,78 @@ main {
     }
 }
 
-.pic-ctn>img {
-    position: absolute;
-    top: 0;
-    left: calc(35% - 100px);
-    opacity: 0;
-    animation: display 10s infinite;
-}
+    .pic-ctn>img {
+        position: absolute;
+        top: 0;
+        left: calc(35% - 100px);
+        opacity: 0;
+        animation: display 10s infinite;
+    }
+        img:nth-child(2) {
+            animation-delay: 2s;
+        }
+        img:nth-child(3) {
+            animation-delay: 4s;
+        }
 
-img:nth-child(2) {
-    animation-delay: 2s;
-}
+/* Tarjetas de productos (Novedades y Populares)  ----------------------- */
 
-img:nth-child(3) {
-    animation-delay: 4s;
-}
-
-
-/*============================= FIN CARRUSEL ===================================*/
-
-h2 {
-    margin-top: 20px;
-    border-bottom: solid 2px #180A41;
-    color: #180A41;
-    text-align: center;
-    border-radius: 5px;
-    font-family: 'Chakra Petch', arial;
-}
-
-h2:hover {
-    background-color: rgb(175, 157, 192);
-}
-
-.price {
-    color: rgb(110, 110, 237);
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-left: 8px;
-}
-
-
-/*===================== Tarjetas de productos ========================*/
-
-.pic1 a {
-    text-decoration: none;
-    text-align: center;
-    color: #180A41;
-}
-
-.pic1,
-.popular-item {
-    margin: 25px;
-    background-color: #fff;
-    padding-bottom: 20px;
-}
-
-.pic1:hover {
-    box-shadow: 0px 0px 10px rgb(175, 157, 192);
-}
-
-.popular-item:hover {
-    box-shadow: 0px 0px 10px rgb(175, 157, 192);
-}
-
-.popular-item a {
-    text-decoration: none;
-}
-
-.popular-item a {
-    color: #180A41;
-    text-align: center;
-}
-
-.our-brands {
-    padding: 10px 0px 15px 0px;
-    width: 100%;
-    text-align: center;
-}
-
-.brands {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.brand-item {
-    flex: 1 1 20%;
-    margin: 1%;
-}
-
-.brand-item img {
-    width: 100%;
-}
-
-
-/*-----------EMPIEZAN LOS CAMBIOS DE YISUS --> modificado por PEI, sorry YISUS :/----------------------*/
-
-.detail,
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .pic1,
 .popular-item {
     width: 250px;
     height: 350px;
+    margin: 25px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(175, 157, 192);
 }
+    .pic1 a,
+    .popular-item a {
+        text-decoration: none;
+        text-align: center;
+        color: #180A41;
+    }
+    .detail,
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+    }
+        .pic1 img,
+        .popular-item img {
+            width: 250px;
+            height: 250px;
+        }
+        .price {
+            color: rgb(110, 110, 237);
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-left: 5%;
+        }
 
-.pic1 img {
-    width: 250px;
-    height: 250px;
-}
-
-.popular-item img {
-    width: 250px;
-    height: 250px;
-}
-
-
-/*-----------------------TERMINAN LOS CAMBIOS DE YISUS-----------------------*/
-
-footer {
-    background-color: #180A41;
-    color: white;
-    display: flex;
-    flex-flow: column;
+/* Sección: Nuestras marcas --------------------------- */
+.our-brands {
+    padding: 10px 0px 15px 0px;
     width: 100%;
-    align-items: center;
-}
-
-
-/*===================== FOOTER ========================*/
-
-.contactus-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contactus-title {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    line-height: 30px;
-}
-
-.contact-form label {
-    display: none;
-}
-
-.contact-form input {
-    padding: 2px 10px;
-}
-
-.nombre,
-.email {
-    width: 200px;
-    border: none;
-    border-radius: 4px;
-}
-
-.contact-form textarea {
-    padding: 10px;
-}
-
-.comentario {
-    margin-top: 15px;
-    width: 200px;
-    border: none;
-    border-radius: 4px;
-}
-
-.data,
-.socialIcons,
-.copyright {
-    margin-top: 10px;
     text-align: center;
 }
-
-.copyright {
-    font-size: 10px;
-}
-
-.data-item {
-    margin-bottom: 5px;
-    font-size: 12px;
-}
-
-.data-item-faq {
-    margin-top: 20px;
-}
-
-.faq-item {
-    font-size: 14px;
-    color: #00aced;
-}
-
-.botones {
-    display: flex;
-    flex-flow: column;
-}
-
-.send {
-    margin-top: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(110, 110, 237);
-    color: rgb(214, 210, 210);
-    font-weight: bold;
-}
-
-.clean {
-    margin-top: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #180A41;
-    color: #fff;
-    font-weight: bold;
-}
-
-.send:hover {
-    box-shadow: 0px 0px 15px rgb(206, 206, 206);
-}
-
-.clean:hover {
-    box-shadow: 0px 0px 15px rgb(206, 206, 206);
-}
-
-.socialIcons {
-    display: flex;
-    flex-flow: row;
-}
-
-.socialIcons li {
-    background-color: yellow;
-    list-style: none;
-    margin: 5px;
-    border-radius: 2em;
-    overflow: hidden;
-}
-
-.socialIcons li a {
-    display: block;
-    padding: 0.5em;
-    min-width: 2.28571429em;
-    max-width: 2.28571429em;
-    height: 2.28571429em;
-    white-space: nowrap;
-    line-height: 1.5em;
-    transition: 0.5s;
-    text-decoration: none;
-    font-family: arial;
-    color: #fff;
-}
-
-.socialIcons li i {
-    margin-right: 0.5em;
-    text-align: center;
-    font-size: 20px;
-}
-
-.socialIcons li:hover a {
-    max-width: 200px;
-    padding-right: 1em;
-    text-decoration: none;
-}
-
-.socialIcons .facebook {
-    background-color: #3b5998;
-    box-shadow: 0 0 16px #3b5998;
-}
-
-.socialIcons .twitter {
-    background-color: #00aced;
-    box-shadow: 0 0 16px #00aced;
-}
-
-.socialIcons .instagram {
-    background-color: #cd486b;
-    box-shadow: 0 0 16px #cd486b;
-}
-
-.socialIcons .whatsapp {
-    background-color: #4dc247;
-    box-shadow: 0 0 16px #4dc247;
-}
+    .brands {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .brand-item {
+        flex: 1 1 20%;
+        margin: 1%;
+    }
+        .brand-item img {
+            width: 100%;
+        }
 
 
 /* ================================= CARRITO DE COMPRAS ======================================== */
@@ -510,131 +466,87 @@ footer {
     width: 90%;
     margin: auto;
 }
-
-.table-cart {
-    margin-top: 25px;
-    text-align: center;
-}
-
-thead {
-    color: #180A41;
-    font-size: 2.5vw;
-    text-align: center;
-}
-
-.celda-i {
-    color: #180A41;
-    width: 15%;
-}
-
-.foto-carro {
-    box-sizing: content-box;
-    width: 100%;
-}
-
-.detalle-producto {
-    font-size: 2.7vw;
-}
-
-.precio-unitario {
-    font-size: 2.6vw;
-}
-
-.precio-final {
-    font-size: 2.9vw;
-}
-
-.celdas {
-    width: 95%;
-    border: 1px rgb(205, 205, 235) solid;
-    border-collapse: collapse;
-}
-
-tfoot {
-    border-top: 0.5px rgb(110, 110, 237) solid;
-}
-
-.total {
-    font-size: 3.2vw;
-    color: #180A41;
-}
+    .table-cart {
+        margin-top: 25px;
+        text-align: center;
+    }
+        thead {
+            color: #180A41;
+            font-size: 10px;
+            text-align: center;
+        }
+        .celdas {
+            width: 95%;
+            border: 1px rgb(205, 205, 235) dashed;
+            border-collapse: collapse;
+        }
+            .celda-i {
+                color: #180A41;
+                width: 12%;
+            }
+            .foto-carro {
+                box-sizing: content-box;
+                width: 100%;
+            }
+            .detalle-producto {
+                font-size: 9px;
+            }
+            .precio-unitario {
+                font-size: 9px;
+            }
+            .precio-final {
+                font-size: 10px;
+            }
+        tfoot {
+            border-top: 0.5px rgb(110, 110, 237) solid;
+        }
+            .total {
+                font-size: 13px;
+                color: #180A41;
+            }
 
 .box-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.buy-button {
-    background-color: #180a41;
-    color: #fff;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    font-size: 20px;
-    margin: 15px;
-}
-
-.buy-button:hover {
-    box-shadow: 0px 0px 10px rgb(119, 117, 117);
-}
-
-.add-button {
-    background-color: rgb(110, 110, 237);
-    color: #fff;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: none;
-    font-size: 20px;
-    margin: 15px;
-}
-
-.add-button:hover {
-    box-shadow: 0px 0px 10px rgb(119, 117, 117);
-}
+    .buy-button {
+        background-color: #180a41;
+        color: #fff;
+        padding: 10px 37px;
+        border-radius: 4px;
+        border: none;
+        font-size: 14px;
+        margin: 10px;
+    }
+        .buy-button:hover {
+            box-shadow: 0px 0px 10px rgb(119, 117, 117);
+        }
+    .add-button {
+        background-color: rgb(110, 110, 237);
+        color: #fff;
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: none;
+        font-size: 14px;
+    }
+        .add-button:hover {
+            box-shadow: 0px 0px 10px rgb(119, 117, 117);
+        }
 
 /* ================================= LOGIN ======================================== */
 
-.body-login {
-    background-color: #f8f1f1;
-}
-
-.main-login {
-    background-color: #f8f1f1;
-}
-
 .login-page {
-    border: 2px solid gray;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
+    border: none;
+    padding: 5%;
     max-width: 480px;
-    background-color: #fff;
-    margin: auto;
-    margin-top: 15px;  
-    margin-bottom: 15px;
-}
-
-.sign-in-control {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 90%;
-    
-}
-
-.mail-container, .password-container {
-    display: flex;
-    margin: 8px;
-    box-shadow: 3px 3px 5px gray;
-    border: solid 1px #666666;
-    margin: 15px 15px 15px 0px;
-    max-width: 550px;
-    padding: 8px;
-    border-radius: 4px;   
+    background-color: transparent;
+    margin: 4% 6%;
 }
 
 .profile-picture {
-    border: rgba(119, 118, 118, 0.4) 1px solid;
+    border: rgba(110, 110, 237, 0.4) 1px solid;
+    border-radius: 50%;
     align-self: center;
     display:block;
     margin:auto;
@@ -642,48 +554,69 @@ tfoot {
 }
 
 form i {
-    background-color: rgb(180, 178, 178);
-    color: black;
+    background-color: rgb(197, 197, 232);
+    color: #000;
     padding: 6px;
-    border: 1px solid rgb(104, 102, 102)
+    border: none;
+    border-radius: 4px;
 }
 
 .sign-in-control {
-    border: 0px solid white;
-    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding-left: 2%; 
+}
+
+.mail-container, .password-container {
+    display: flex;
+    align-self: center;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px gray;
+    border: none;
+    margin: 5%;
+    max-width: 500px;
+    padding: 8px;
+    border-radius: 4px;   
 }
 
 .forgot-password {
-    margin-left: 40%;
-    margin-top: -10px;
+    margin-top: -8px;
+    margin-right: 5%;
+    font-size: 0.7rem;
+    text-align: right;
 }
 
 .remember-me-container {
-    margin-bottom: 3%;
+    margin-bottom: 5%;
+    font-size: 0.8rem;   
 }
+    .remember-me {
+        margin-left: 5%;
+    }
 
 .button-form {
     margin-bottom: 5%;
 }
-
     .login-link {
         text-decoration: none;
         background-color: #180a41;
         color: #fff;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .register-link {
         text-decoration: none;
-        background-color: rgb(110, 110, 237);
         color: #fff;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .button-form .login-button{
         background-color: #180a41;
         border: none;
-        padding: 16px 32px;
+        padding: 12px 20px;
         border-radius: 4px;
         width: 100%;
     }
@@ -705,7 +638,7 @@ form i {
         box-shadow: 0px 0px 15px gray;
     }
 
-    /* ================================= REGISTER ======================================== */
+/* ================================= REGISTER ======================================== */
 
    .register-form{
        padding: 20px 30px 0px;
@@ -772,7 +705,7 @@ form i {
     }
 
 
-    /* ========================  PRODUCT DETAIL ======================================== */
+/* ========================  PRODUCT DETAIL ======================================== */
 
         .product-image{
             text-align: center;
@@ -863,12 +796,7 @@ form i {
             }
 
 
-    /* ================================= FAQ ======================================== */
-
-
-    .main-faq {
-    background-color: #f8f1f1;
-    }
+/* ================================= FAQ ======================================== */
 
     .faq-container {
         margin-left: 5%;
@@ -913,45 +841,52 @@ form i {
         margin-right: 10px;
     }
 
+
+
+
 /* ---------------------------- TABLETS ---------------------------- */
 
-@media (min-width: 481px) {
-    /*===================== HOME / header ===================*/
+@media (min-width: 481px) and (max-width: 768px){
+    /*===================== Header ===================*/
+    .cart-heart{
+        margin-left: 5%;
+    }
     .cart-box {
-        left: -15px;
+        left: -8px;
         top: -2px;
     }
     .fav-box {
-        left: 25px;
+        left: 38px;
         top: -2px;
     }
-    .heart,
-    .cart {
-        font-size: 22px;
-    }
+        .heart,
+        .cart {
+            font-size: 21px;
+        }
     .logo-container {
-        margin: 20px 80px 20px 50px;
+        margin: 20px 30% 20px 20%;
     }
-    /*=============== Búsqueda, botón y menú hamburguesa ===============*/
+    
     .search-box {
+        margin-right: 3%;
         width: 160px;
         margin-left: 8px;
         position: absolute;
-        right: -80px;
+        right: 60px;
     }
-    .search-box input {
-        width: 100%;
-    }
+        .search-box input { 
+            width: 100%;
+        }
     .button-box {
         position: absolute;
-        left: 58px;
-        bottom: 46px;
+        left: -74px;
+        top: 16px;
         font-size: 12px;
     }
+
     .burger-menu {
-        right: -20px;
+        right: 20px;
     }
-    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
     .pic-ctn {
         right: 6%;
         height: 120px;
@@ -975,139 +910,145 @@ form i {
         width: 150px;
         height: 150px;
     }
-    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
-}
+    footer {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .copyright {
+        flex: 5 1 100%;
+        text-align: center;
+    }
+    
+    /*============ CARRITO de COMPRAS ======== */
 
-footer {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    thead {
+        font-size: 12px;
+    }
 
-.copyright {
-    flex: 5 1 100%;
-    text-align: center;
-}
+    .celdas {
+        width: 150px;
+    }
 
+    .foto-carro {
+        box-sizing: content-box;
+        width: 180px;
+    }
 
-/*============ CARRITO de COMPRAS ======== */
+    .detalle-producto {
+        font-size: 14px;
+    }
 
-thead {
-    font-size: 12px;
-}
+    .precio-unitario {
+        font-size: 16px;
+    }
 
-.celdas {
-    width: 150px;
-}
+    .precio-final {
+        font-size: 18px;
+    }
 
-.foto-carro {
-    box-sizing: content-box;
-    width: 180px;
-}
+    .total {
+        font-size: 20px;
+    }
 
-.detalle-producto {
-    font-size: 14px;
-}
+    /* ================================= LOGIN ======================================== */
 
-.precio-unitario {
-    font-size: 16px;
-}
+    .login-page {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
-.precio-final {
-    font-size: 18px;
-}
+    /* ================================= REGISTER ======================================== */
 
-.total {
-    font-size: 20px;
-}
-
-/* ================================= LOGIN ======================================== */
-
-.login-page {
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-/* ================================= REGISTER ======================================== */
-
-.register-form {
-    margin: auto;
-    margin-bottom: 5%;
+    .register-form {
+        margin: auto;
+        margin-bottom: 5%;
+    }
 }
 
 /* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1199px){
     .search-logo-container {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
+        justify-content: flex-start;
+        align-items: center;
     }
-    /*===================== HOME / header ===================*/
+    /* Header --------------------------------- */
     .cart-box {
-        left: -35px;
+        left: -05px;
         top: 120px;
     }
     .fav-box {
-        left: 30px;
+        left: 50px;
         top: 120px;
     }
-    /*=============== Búsqueda, botón y menú hamburguesa ===============*/
-    .search-box {
-        right: -35px;
-        top: 100px;
-    }
-    .button-box {
-        left: 15px;
-        bottom: 117.5px;
-    }
-    .logo-box-normal {
-        display: flex;
-        justify-content: center;
-    }
+    
     .logo-box-reduced {
         display: none;
     }
+    .logo-box-normal {
+        display: flex;
+    }
+
+    .search-box {
+        left: 300px;
+        bottom: 90px;
+    }
+    .button-box {
+        left: 455px;
+        top: -109px;
+    }
+    
+
     .burger-container {
         display: none;
     }
     .nav-bar {
         display: flex;
-        flex: 1 0 100%;
-        justify-content: space-around;
+        flex: 0 2 100%;
+        justify-content: space-evenly;
+        margin: 0px 20px 0px 5px;
     }
-    .barra-nav1 {
+        .barra-nav1 {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+        }
+            .secciones a {
+                margin: 10px;
+                color: #fff;
+            }
+                nav ul .secciones:hover a {
+                    text-shadow: 1px 1px 2px rgb(110, 110, 237);
+                    text-decoration: underline;
+                    font-size: 17px;
+                }
+
+    /* Footer --------------------------- */
+    .data-item {
+        margin-bottom: 10px;
+    }
+    .contact-form label {
+        display: block;
+    }
+    .socialIcons {  
         display: flex;
-        flex-flow: row;
-        justify-content: space-around;
+        flex-flow: column;
     }
-    .secciones a {
-        margin: 10px;
-        color: #fff;
-    }
-    .secciones:hover {
-        text-shadow: 1px 1px 2px #ebebeb;
-        text-decoration: underline;
-        color: rgb(110, 110, 237);
-    }
+
+    /* ============================== HOME ========================================*/
     .pic-ctn {
         right: 14%;
         height: 250px;
     }
-    .socialIcons {
-        display: flex;
-        flex-flow: column;
-    }
-    .box-buy-button {
-        margin-top: 20px;
-    }
-    .box-add-button {
-        margin-top: 20px;
-    }
-    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+
     .detail,
     .gallery-container {
         flex-direction: row;
@@ -1131,12 +1072,13 @@ thead {
         width: 300px;
         height: 300px;
     }
-    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
-    .data-item {
-        margin-bottom: 10px;
+
+    /* ================================= PRODUCT CART =========================== */
+    .box-buy-button {
+        margin-top: 20px;
     }
-    .contact-form label {
-        display: block;
+    .box-add-button {
+        margin-top: 20px;
     }
 
     /* ================================= REGISTER ======================================== */
@@ -1180,7 +1122,6 @@ thead {
                     width: 8%;
                 }
 
-
      /* ================================= FAQ ======================================== */
 
      .faq-container{
@@ -1200,7 +1141,6 @@ thead {
     .box-answer li:hover{
         font-weight: bold;
         font-size: 18px;
-
     }   
 
 }
@@ -1209,11 +1149,22 @@ thead {
 /* ---------------------------- DESKTOP ---------------------------- */
 
 @media (min-width: 1200px) {
+    .search-box {
+        height: 20px;
+        position: relative;
+
+    }
+    .button-box {
+        position: relative;
+    }
+
+
     footer {
         display: flex;
         align-items: center;
     }
-    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+
+    /*==============================HOME===========================*/
     .pic-ctn {
         right: 19%;
         height: 350px;
@@ -1258,7 +1209,6 @@ thead {
     .popular-item a:hover {
         color: #180A41;
     }
-    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 
     /* ========================  PRODUCT DETAIL ======================================== */
 
