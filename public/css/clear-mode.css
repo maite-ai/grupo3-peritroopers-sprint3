@@ -112,7 +112,8 @@ header {
         .casillero {
             padding-left: 7px;
             margin-top: 2px; 
-            margin-left: 2px;  
+            margin-left: 5px;  
+            font-size: 12px;
         }
 
     .icon-box{
@@ -745,12 +746,11 @@ form i {
                 width: 80%;
                 margin: 10px 0;
             }
-            .product-image h2{
-                margin-left: 10px;
-                text-align: left;
-            }
-        .main-productDet h2{
-            padding: 2%;
+
+        h3 {
+            margin-top: 15px;
+            margin-left: 2%;
+            font-size: 15px;
         }
         .product-info{
             margin: 5px 2px;
@@ -812,11 +812,21 @@ form i {
                 .map{
                     margin: auto;
                 }
-        .product-detail{
-            margin: 5px 2px;
-            padding: 5%;
+        .product-detail-container{
+            margin: 4px;
+            padding: 2px 5%;
         }
-        .product-chat{
+            .product-detail-container p {
+                font-size: 12px;
+            }
+        .product-chat-container {
+            margin: 4px;
+            padding: 2px 5%;
+        }
+            .product-chat-container p {
+                font-size: 12px;
+            }
+        .user-comment-container{
             margin: 5px 2px;
             padding: 5%;
         }
@@ -826,6 +836,16 @@ form i {
                 border-radius: 4px;
                 margin-top: 20px;
             }
+            .comment-textarea {
+                padding-left: 10px;
+                padding-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+        .user-comment-container {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
 
 
 /* ================================= FAQ ======================================== */
