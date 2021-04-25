@@ -756,6 +756,10 @@ form i {
                     margin: auto;
                     margin-top: 15px;
                 }
+                    .pay-button a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
                     .pay-button p{
                         margin-bottom: 15px;
                     }
@@ -845,7 +849,37 @@ form i {
         margin-right: 10px;
     }
 
+/* ================================= CREATE ======================================== */
 
+.creation{
+    margin: 0 25%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+    .creation button{
+        width: 100%;
+        padding: 8px 16px;
+    }
+.edits{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px grey;
+    margin: 15px 0;
+    padding: 10px;
+}
+.edits-2{
+    font-size: 23px;
+    text-align: left;
+}
+    #image{
+        margin: 15px 0;
+    }
+    #prod-name{
+        margin-top: 15px;
+    }
+
+/* ================================= EDIT ======================================== */
 
 
 /* ---------------------------- TABLETS ---------------------------- */
@@ -1093,7 +1127,7 @@ form i {
 
      /* ========================  PRODUCT DETAIL ======================================== */
 
-     .price-rate{
+    .price-rate{
         font-size: 25px;
         margin: 0 20px;
         margin-right: -3px;
@@ -1118,6 +1152,7 @@ form i {
             .input-button p{
                 margin-bottom: 15px;
             }
+
             .input-productDet{
                 margin-bottom: 15px;
             }
@@ -1125,7 +1160,15 @@ form i {
                     margin: 0 5px;
                     width: 8%;
                 }
-
+    .detail-button{
+        width: 20%;
+        border: none;
+        margin-left: 4.5%;
+        padding: 6px 10px;
+        background-color: rgb(110, 110, 237);
+        color: #fff;
+        border-radius: 4px;
+    }
      /* ================================= FAQ ======================================== */
 
      .faq-container{
@@ -1302,5 +1345,8 @@ form i {
     }
     .product-chat{
         padding: 1% 0;
+    }
+    .detail-button{
+        margin-left: -0.5%;
     }
 }
