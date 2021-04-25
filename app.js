@@ -9,21 +9,16 @@ app.use(express.static(publicPatch));
 
 app.set('view engine', 'ejs');
 
-app.get("/", (req, res) => {res.render("index")});
+//Le indicamos a express el requerimiento de rutas
+const homeRouter = require('./routes/homeRouter');
+const userRouter = require('./routes/userRouter');
+const productRouter = require('./routes/productRouter');
 
-app.get("/register", (req, res) => { res.render("./users/register") });
+app.use('/', userRouter);
 
-app.get("/productCart", (req, res) => { res.render("productCart") });
+app.use('/', homeRouter);
 
-app.get("/login", (req, res) => { res.render("./users/login") });
-
-app.get("/productDetail", (req, res) => { res.render("./products/productDetail") });
-
-app.get("/create", (req, res)=>{ res.render("./products/createProduct") });
-
-app.get("/edit", (req, res)=>{ res.render("./products/editProduct") });
-
-app.get("/faq", (req, res) => { res.render("faq") });
+app.use('/', productRouter);
 
 app.listen(port || 3030, () => {
     console.log("El servidor está corriendo con éxito");
