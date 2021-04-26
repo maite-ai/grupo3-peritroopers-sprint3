@@ -802,7 +802,15 @@ form i {
                 border-radius: 4px;
                 margin-top: 20px;
             }
-
+            .detail-button{
+                width: 40%;
+                border: none;
+                margin-left: 4.5%;
+                padding: 6px 10px;
+                background-color: rgb(110, 110, 237);
+                color: #fff;
+                border-radius: 4px;
+            }
 
 /* ================================= FAQ ======================================== */
 
@@ -1160,15 +1168,10 @@ form i {
                     margin: 0 5px;
                     width: 8%;
                 }
-    .detail-button{
-        width: 20%;
-        border: none;
-        margin-left: 4.5%;
-        padding: 6px 10px;
-        background-color: rgb(110, 110, 237);
-        color: #fff;
-        border-radius: 4px;
-    }
+                .detail-button{
+                    width: 20%;
+                }
+    
      /* ================================= FAQ ======================================== */
 
      .faq-container{
@@ -1347,6 +1350,7 @@ form i {
         padding: 1% 0;
     }
     .detail-button{
+        width: 30%;
         margin-left: -0.5%;
     }
 }
