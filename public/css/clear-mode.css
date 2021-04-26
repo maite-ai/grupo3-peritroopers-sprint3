@@ -816,6 +816,15 @@ form i {
                 .map{
                     margin: auto;
                 }
+                .detail-button{
+                    width: 20%;
+                    border: none;
+                    margin-left: 4.5%;
+                    padding: 6px 10px;
+                    background-color: rgb(110, 110, 237);
+                    color: #fff;
+                    border-radius: 4px;
+                }
         .product-detail-container{
             margin: 4px;
             padding: 2px 5%;
