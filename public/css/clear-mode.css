@@ -35,7 +35,8 @@ header {
     justify-content: space-evenly;
     position: absolute;
     top: 45%;
-    left: 55%;
+    left: 64%;
+    transform: translateX(-50%)
 }
     .cart-box {
         margin: 10px;
@@ -71,7 +72,9 @@ header {
     margin: 20px 50% 20px 5%;
     text-align: center;
 }
-
+    .logo-container a {
+        text-decoration: none;
+    }
     .logo-box-normal {
         display: none;
     }
@@ -87,8 +90,15 @@ header {
 .search-container {
     display: flex;
     position: absolute;
-    left: 54%;
+    left: 87%;
+    transform: translateX(-87%);
     top: 2%;
+    margin-right: 4%;
+    margin-top: 15px;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 10px;
+
 }
     .search-box {
         width: 150px;
@@ -96,20 +106,31 @@ header {
         .search-box input {
             width: 100%;
             height: 18px;
-            border-radius: 3px;
+            border-radius: 10px;
             border: none;
         }
         .casillero {
-            margin-top: 15px;
-            padding-left: 7px;  
+            padding-left: 7px;
+            margin-top: 2px; 
+            margin-left: 5px;  
+            font-size: 12px;
         }
 
-
+    .icon-box{
+        padding: 2px;
+    }
+        .icon-box .fa-search {
+            text-align: center;
+            color: #c1c4c4;
+            text-decoration: none;
+        }
 /* Burguer y enlaces ------------------------------------ */
 
 .burger-container {
     position: relative;
     left: 5%;
+    top: 3px;
+    margin-right: 5%;
 }
     .burger-menu {
         margin: 10px;
@@ -322,13 +343,13 @@ footer {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:7%;
-	right:7%;
+	bottom:8%;
+	right:8%;
 	background-color:#25d366;
 	color:#fff;
-	border-radius:50px;
+	border-radius:50%;
 	text-align:center;
-    font-size:30px;
+    font-size:28px;
     font-weight: bold;
 	box-shadow: 5px 5px 20px #666;
     z-index:100;
@@ -336,12 +357,11 @@ footer {
 .float:hover {
 	text-decoration: none;
 	color: #fff;
-  background-color:#1c5932;
+    background-color:#1c5932;
 }
-
-.my-float{
-	margin-top:16px;
-}
+    .my-float{
+        margin-top:16px;
+    }
 /*=========================== HOME =====================================*/
 /* --------------- CARRUSEL de IMÁGENES --------------- */
 .pic-ctn {
@@ -394,8 +414,6 @@ footer {
         }
 
 /* Tarjetas de productos (Novedades y Populares)  ----------------------- */
-
-
 .pic1,
 .popular-item {
     width: 250px;
@@ -560,7 +578,6 @@ form i {
     border: none;
     border-radius: 4px;
 }
-
 .sign-in-control {
     display: flex;
     flex-wrap: wrap;
@@ -581,6 +598,13 @@ form i {
     padding: 8px;
     border-radius: 4px;   
 }
+    .mail-container:focus {
+        border: none;
+    }
+    .password-container:focus {
+        border: none;
+    }
+
 
 .mail-container input, .password-container input{
     width: 100%;
@@ -645,35 +669,43 @@ form i {
 /* ================================= REGISTER ======================================== */
 
    .register-form{
-       padding: 20px 30px 0px;
-       margin: 10px;
-       margin-bottom: 30px;
+       padding: 30px 10% 30px 10%;
+       margin: auto;
    }
 
    .contenedor-regform{
-       margin-bottom: 15px;
-       color: #180A41;
-       display: flex;
-       flex-direction: column;
+        padding: 0px 2% 10px 2%;
+        margin-bottom: 2px;
+        color: #180A41;
+        display: flex;
+        flex-direction: column;
    }
 
    .contenedor-regform input{
-       padding: 8px;
+       padding: 5px 40px;
        border-radius: 7px;
        border: 1px solid rgb(218, 215, 215);
        width: 90%;
    }
 
+   .contenedor-regform input:focus {
+        border: solid 1px rgb(110, 110, 237);
+        box-shadow: 0px 0px 10px #cac7c7;
+        border-radius: 7px;
+   }
+
    .contenedor-regform label{
-       font-size: 23px;
-       margin-left: 20px;
+       font-size: 15px;
+       text-align: left;
+       margin-bottom: 0%;
+       padding: 0px 40px;
    }
 
    .send-button{
         background-color: #180a41;
         color: #fff;
-        font-size: 20px;
-        padding: 16px 32px;
+        font-size: 14px;
+        padding: 6px 18px;
         border-radius: 4px;
         width: 90%;
         border: none;
@@ -687,21 +719,17 @@ form i {
         text-decoration: none;
     }
 
-    .got-account-box a:hover{
-        color: #fff;
-    }
-
     .got-account-box{
         text-decoration: none;
-        background-color: rgb(110, 110, 237);
         margin-top: 10px;
         color: #fff;
         border: none;
-        padding: 6px 10px;
+        padding: 6px;
         border-radius: 4px;
         width: 90%;
         margin-top: 2%;
         text-align: center;
+        font-size: 14px;
     }
 
     .got-account-box:hover{
@@ -713,18 +741,16 @@ form i {
 
         .product-image{
             text-align: center;
-            flex: 1 1 auto;
         }
             .product-image img{
-                width: 90%;
+                width: 80%;
                 margin: 10px 0;
             }
-            .product-image h2{
-                margin-left: 10px;
-                text-align: left;
-            }
-        .main-productDet h2{
-            padding: 2%;
+
+        h3 {
+            margin-top: 15px;
+            margin-left: 2%;
+            font-size: 15px;
         }
         .product-info{
             margin: 5px 2px;
@@ -762,12 +788,14 @@ form i {
                     }
                     .pay-button p{
                         margin-bottom: 15px;
+                        font-size: 14px;
                     }
                     .pay-button select{
                         margin-bottom: 5px;
                         border: none;
                         border-radius: 4px;
                         padding: 7px;
+                        font-size: 12px;
                     }
                     .input-productDet{
                         margin-bottom: 15px;
@@ -788,11 +816,22 @@ form i {
                 .map{
                     margin: auto;
                 }
-        .product-detail{
-            margin: 5px 2px;
-            padding: 5%;
+
+        .product-detail-container{
+            margin: 4px;
+            padding: 2px 5%;
         }
-        .product-chat{
+            .product-detail-container p {
+                font-size: 12px;
+            }
+        .product-chat-container {
+            margin: 4px;
+            padding: 2px 5%;
+        }
+            .product-chat-container p {
+                font-size: 12px;
+            }
+        .user-comment-container{
             margin: 5px 2px;
             padding: 5%;
         }
@@ -802,6 +841,17 @@ form i {
                 border-radius: 4px;
                 margin-top: 20px;
             }
+            .comment-textarea {
+                padding-left: 10px;
+                padding-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+        .user-comment-container {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
             .detail-button{
                 width: 40%;
                 border: none;
