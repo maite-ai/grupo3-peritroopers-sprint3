@@ -739,20 +739,20 @@ form i {
 
 /* ========================  PRODUCT DETAIL ======================================== */
 
-        .product-image{
-            text-align: center;
-        }
-            .product-image img{
-                width: 80%;
-                margin: 10px 0;
-            }
+.product-image{
+    text-align: center;
+}
+    .product-image img{
+        width: 80%;
+        margin: 10px 0;
+    }
 
-        h3 {
-            margin-top: 15px;
-            margin-left: 2%;
-            font-size: 15px;
-        }
-        .product-info{
+h3 {
+    margin-top: 15px;
+    margin-left: 2%;
+    font-size: 15px;
+}
+    .product-info{
             margin: 5px 2px;
             flex: 7 1 auto;
         }
@@ -944,45 +944,11 @@ form i {
 
 @media (min-width: 481px){
     /*===================== Header ===================*/
-    .cart-heart{
-        margin-left: 5%;
-    }
-    .cart-box {
-        left: -8px;
-        top: -2px;
-    }
-    .fav-box {
-        left: 38px;
-        top: -2px;
-    }
-        .heart,
-        .cart {
-            font-size: 21px;
-        }
+
     .logo-container {
-        margin: 20px 30% 20px 20%;
+        margin: 20px 40% 20px 10%;
     }
     
-    .search-box {
-        margin-right: 3%;
-        width: 160px;
-        margin-left: 8px;
-        position: absolute;
-        right: 60px;
-    }
-        .search-box input { 
-            width: 100%;
-        }
-    .button-box {
-        position: absolute;
-        left: -74px;
-        top: 16px;
-        font-size: 12px;
-    }
-
-    .burger-menu {
-        right: 20px;
-    }
     .pic-ctn {
         right: 6%;
         height: 120px;
@@ -1026,44 +992,52 @@ form i {
     }
 
     .celdas {
-        width: 150px;
+        width: 100px;
     }
 
     .foto-carro {
         box-sizing: content-box;
-        width: 180px;
+        width: 140px;
     }
 
     .detalle-producto {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .precio-unitario {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .precio-final {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .total {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .box-buttons {
+        margin-top: 10px;
+    }
+
+    .add-button {
+        margin-top: 10px;
     }
 
     /* ================================= LOGIN ======================================== */
 
     .login-page {
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin: 5% 10%;
     }
 
     /* ================================= REGISTER ======================================== */
 
     .register-form {
-        margin: auto;
-        margin-bottom: 5%;
+        margin: 2% 10%;
     }
+
+
+
 }
 
 /* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
@@ -1077,14 +1051,21 @@ form i {
         align-items: center;
     }
     /* Header --------------------------------- */
-    .cart-box {
-        left: -05px;
-        top: 120px;
+    .cart-heart {
+        left: 95%;
+        top: 94%;
+        transform: translate(-95%, -94%);
     }
-    .fav-box {
-        left: 50px;
-        top: 120px;
-    }
+        .cart-box {
+            margin-right: 2%;
+            padding-right: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .fav-box {
+            margin-left: 2%;
+        }
     
     .logo-box-reduced {
         display: none;
@@ -1093,15 +1074,27 @@ form i {
         display: flex;
     }
 
-    .search-box {
-        left: 300px;
-        bottom: 90px;
+    .search-container {
+        left: 93%;
+        top: 45%;
+        transform: translate(-93%, -45%);
+        height: 28px;
+        width: 200px;
+        padding-right: 2px;
+        align-items: center;
+        
     }
-    .button-box {
-        left: 455px;
-        top: -109px;
-    }
-    
+        .search-box {
+            margin: 3px 20px 3px 0px;
+            padding: 2px 2px 2px 0px;
+            width: 100%;
+        }
+            .casillero {
+                font-size: 14px;
+            }
+        .icon-box {
+            margin-right: 2px;
+        }
 
     .burger-container {
         display: none;
@@ -1249,15 +1242,6 @@ form i {
 /* ---------------------------- DESKTOP ---------------------------- */
 
 @media (min-width: 1200px) {
-    .search-box {
-        height: 20px;
-        position: relative;
-
-    }
-    .button-box {
-        position: relative;
-    }
-
 
     footer {
         display: flex;
@@ -1358,7 +1342,7 @@ form i {
                 }
                     .p-pay p{
                         width: 120%;
-                        font-size: 1rem;
+                        font-size: 14px;
                         margin-bottom: 15px;
                     }
                     .p-pay select{
@@ -1372,7 +1356,7 @@ form i {
                     align-items: center;
                 }
                     .input-button p{
-                        font-size: 1rem;
+                        font-size: 16px;
                         margin-bottom: 15px;
                     }
                     .input-productDet{
